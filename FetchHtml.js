@@ -350,7 +350,7 @@ function ResponseCheck(cityName) {
 	}
 
 
-	request.open("GET", "http://api.openweathermap.org/data/2.5/forecast?q=" + cityName +
+	request.open("GET", "https://api.openweathermap.org/data/2.5/forecast?q=" + cityName +
 		"&APPID=e23ccbd3f8b2a7a6a46372e6934d17af&mode=xml", true);
 	request.send();
 	document.querySelector('.ct').innerHTML = cityName ;
